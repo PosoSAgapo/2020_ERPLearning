@@ -8,7 +8,7 @@ This is the repository fot the paper Event Representation Learning Enhanced With
 `Huggingface Transformer`  
 
 ## Data:
-This paper using following data:  
+This paper using following data,for some of them, we already upload it in the data folder, you need to download the dataset that is in a larger size  :  
 
 `Transitive Similarity Data`  
 
@@ -39,14 +39,14 @@ After pretraining on the NYT corpus, train the event representation model on the
 
 ## Test:
 ### For the hard similarity task, run this script:  
-`eval_hard_similarity.py `  
+`eval_hard_similarity.py `
 ### For the transitive sentence similarity task, run this script:  
 `eval_transitive_sentence_similarity.py`  
 ### For the script event prediction task:  
 see this [repository](https://github.com/MagiaSN/ConstructingNEEG_IJCAI_2018).  
 ### For Running the ROC dataset,you need to follow these step:
-1.Down load the [reverb](https://github.com/knowitall/reverb) tool which is used to extract events from sentence , you need to access this event extraction tools which will require Java as building tools.  
-2.Using this tool to process the ROC dataset of each yaer,which will give you then extracted event for each sentence.  
+1.Download the [reverb](https://github.com/knowitall/reverb) tool which is used to extract events from sentences , you need to use this event extraction tools which will require Java as building tools.  
+2.Using this tool to process the ROC dataset of each yaer,which will give you the extracted events for each sentence.  
 3.Running `process.py`,`justify.py`,`reindex.py`,`reform.py`,`selectcloze.py` to collect the data.  
 4.To run next step, you still need the transfomer package which is the `huggingface transformer`, install it following [this](https://huggingface.co/).  
 5.Run the `train_bert_with_event.py` and `train_bert_without_event.py` to have the results of different models.  
