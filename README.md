@@ -30,7 +30,8 @@ Firstly, you should train the event representation model NTN using NYT dataset. 
 
 After pretraining on the NYT corpus, train the event representation model on the ATOMIC dataset, using the following script:  
 `joint_train_on_atomic_stack_prop.py`,this code trains the event representation model on the ATOMIC dataset, with additional intent prediction and sentiment classification objective.  
-
+## Visulizing Embedding Data:  
+To visulize this data,you need to run the `make_good_and_bad_embedding.sh`  shell script, this will generate event embedding matrix saved as `good_embedding.pt` and `bad_embedding.pt`, then run the `make_projection.py` to project the embedding matrix to 2 dimension space,then you can run the `run_matplotlib.py` to have the visulizing picture.
 ## Test:
 ### For the hard similarity task, run this script:  
 `eval_hard_similarity.py `
