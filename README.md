@@ -44,7 +44,7 @@ After pretraining on the NYT corpus, train the event representation model on the
 `eval_transitive_sentence_similarity.py`  
 ### For the script event prediction task:  
 see this [repository](https://github.com/MagiaSN/ConstructingNEEG_IJCAI_2018).  
-### For Running the ROC dataset,you need to follow these step:
+### For Running the ROC dataset:
 1.Download the [reverb](https://github.com/knowitall/reverb) tool which is used to extract events from sentences , you need to use this event extraction tools which will require Java as building tools.  
 2.Using this tool to process the ROC dataset of each yaer,which will give you the extracted events for each sentence.  
 3.Running `process.py`,`justify.py`,`reindex.py`,`reform.py`,`selectcloze.py` to collect the data.  
