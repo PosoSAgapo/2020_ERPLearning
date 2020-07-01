@@ -8,18 +8,12 @@ This is the repository fot the paper Event Representation Learning Enhanced With
 `Huggingface Transformer`  
 
 ## Data:
-This paper using following data,for some of them, we already upload it in the data folder, you need to download the dataset that is in a larger size  :  
-
+This paper uses following data:  
 `Transitive Similarity Data`  
-
 `Yago Knowledge Base`, which we only take the Yago_Facts part, you can access it at the [home page](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/yago)    
-
 `Hard Similarity Dataset`  
-
 `ATOMIC Dataset`  
-
 `NYT Dataset`  
-
 `ROC Dataset`  
 
 The pretrained word embedding is glove embedding, for the 'PerosonX' and 'PersonY' embedding , we take average of 20 most used people's name as its' embedding,the embedding could be downloaded at [google drive](https://drive.google.com/file/d/1Jw-X-mVci5VbKg0Gl0ZRRwhgfgyiZ7Vc/view?usp=drive_open).   
