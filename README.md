@@ -30,12 +30,12 @@ You also need to run event_process.py to have a data that combines NYT data with
 ### Train:  
 Firstly, you should train the event representation model NTN using NYT dataset. This model is described in  the AAAI 2018 *paper Event Representations with Tensor-based Compositions* .    
 
-* `train_event_prediction_on_nyt.py` Pretrain the event representation model on the NYT corpus with "event prediction" objective.  
+* `train_event_prediction_on_nyt.py`,this code pretrains the event representation model on the NYT corpus with "event prediction" objective.  
 
-* `train_word_prediction_on_nyt.py` Pretrain the event representation model on the NYT corpus with "word prediction" objective.   
+* `train_word_prediction_on_nyt.py`,this code pretrains the event representation model on the NYT corpus with "word prediction" objective.   
 
 After pretraining on the NYT corpus, train the event representation model on the ATOMIC dataset, using the following script:  
-`joint_train_on_atomic_stack_prop.py` Train the event representation model on the ATOMIC dataset, with additional intent prediction and sentiment classification objective.  
+`joint_train_on_atomic_stack_prop.py`,this code trains the event representation model on the ATOMIC dataset, with additional intent prediction and sentiment classification objective.  
 
 ## Test:
 ### For the hard similarity task, run this script:  
